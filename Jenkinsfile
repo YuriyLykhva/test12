@@ -14,13 +14,10 @@ pipeline {
                 bat 'mvn clean test'
             }
         }
-//         stage('Allure') {
-//             steps {
-//                 allure includeProperties: false, jdk: '', results: [[path: 'tests/target/allure-results']]
-//             }
-//         }
-    }
-    post {
-          allure includeProperties: false, jdk: '', results: [[path: 'tests/target/allure-results']]
+        stage('Allure') {
+            steps {
+                allure includeProperties: false, jdk: '', results: [[path: 'tests/target/allure-results']]
+            }
+        }
     }
 }
