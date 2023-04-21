@@ -21,3 +21,6 @@ pipeline {
         }
     }
 }
+// ***JENKINS_SERVER_URL***/job/***JENKINS_JOB_NAME***/build?token=***JENKINS_BUILD_TRIGGER_TOKEN***
+// http://192.168.0.101:8090/job/test13/build?token=jenkins_token_123
+// http://192.168.0.101:8090/job/test13/github-webhook/build?token=jenkins_token_123
